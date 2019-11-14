@@ -10,7 +10,8 @@ class Post(models.Model):
     pub_date = models.DateTimeField(default=timezone.now)
 
     class Meta:
-        ordering = ('-pub_date',)
+      #  ordering = ('pub_date',)   #  正排序
+        ordering = ('-pub_date',) #  反排序
 
     def __unicode__(self):
         return self.title
