@@ -3,15 +3,14 @@
 {% load staticfiles %}
 <html>
 <head>
-    <meta charset='utf-8'>
-    <title>{% block title %} {% endblock %}</title>
+<meta charset='utf-8'>
+<title>{% block title %} {% endblock %}</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
 integrity="sha384-
 1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
 crossorigin="anonymous">
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstraptheme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
 crossorigin="anonymous">
@@ -23,16 +22,16 @@ crossorigin="anonymous">
     <div class='container-fluid'>
         {% include 'header.html' %}
         <div class='panel panel-default'>
-            <div class='panel-heading'>
-                {% block headmessage %} {% endblock %}
-            </div>
-            <div class='panel-body'>
-                {% block content %} {% endblock %}
-            </div>
-            <div class='panel-footer'>
-                {% include 'footer.html' %}
-            </div>
+        <div class='panel-heading'>
+            {% block headmessage %} {% endblock %}
+        </div>
+        <div class='panel-body'>
+            {% block content %} {% endblock %}
+        </div>
+        <div class='panel-footer'>
+            {% include 'footer.html' %}
+        </div>
         </div>
     </div>
-</body>
+    </body>
 </html>
