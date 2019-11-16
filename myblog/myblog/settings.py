@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'markdown_deux',
     'mainsite',
 ]
 
@@ -122,3 +123,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+MARKDOWN_DEUX_STYLES = {
+    "default" : {
+        "extras": {
+        "code-friendly": None,
+    },
+        "safe_mode": False,
+    },
+}
+
+
