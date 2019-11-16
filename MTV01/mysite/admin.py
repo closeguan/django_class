@@ -1,6 +1,5 @@
 from django.contrib import admin
-from mysite.models import NewTable, Product 
+from mysite.models import NewTable
 admin.site.register(NewTable)
-admin.site.register(Product)
 
 # Register your models here.
