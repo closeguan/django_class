@@ -1,5 +1,6 @@
 <!-- index.html -->
 {% extends 'base.html' %}
+{% load markdown_deux_tags %}
 {% block title %} 歡迎光臨我的部落格 {% endblock %}
 {% block headmessage %}
 <h3 style='font-family:標楷體;'>本站文章列表
@@ -14,7 +15,9 @@
         </div>
          <div class='panel-body' style='background-color:#ffffdd'>
             <p>
-                {{ post.body | truncatechars:60 }} 
+               <!-- {{ post.body | markdown | truncatechars:40 }}  -->
+               <!-- 或是                                             -->
+                {{ post.abstract | markdown }}
                 <!-- 用過濾器去呈現文章內容前60字 -->
             </p>
         </div>
